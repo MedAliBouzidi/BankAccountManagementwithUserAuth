@@ -12,6 +12,10 @@ typedef struct {
 
 // Entry point for register/login/exit
 void mainMenu();
+// Password encryption
+char *encryptPassword(char *password);
+// Password decryption
+char *decryptPassword(char *encryptedPassword);
 // Add a new user and initialize account balance
 void registerUser(char *username, char *password);
 // Verify credentials and load user data
