@@ -54,21 +54,16 @@ A console-based C program that allows users to **register, log in**, and **manag
 
 ---
 
-## 🗂️ Files Used
+## 🗂️ File Used
 
-- `users.txt` → Stores username and password.
-- `accounts.txt` → Stores username and balance.
+- `accounts.txt` → Stores user data: username, encrypted password and balance.
 
 ### Example Content
 
 ```
-users.txt
-john 12345
-mary pass123
-
 accounts.txt
-john 1500.50
-mary 230.00
+john mvqz1234 500.00
+mary nzxw5678 1200.50
 ```
 
 ---
@@ -98,7 +93,6 @@ typedef struct {
 | `checkBalance()`    | Display current balance                       |
 | `deposit()`         | Add amount and update file                    |
 | `withdraw()`        | Subtract amount if sufficient balance         |
-| `updateBalance()`   | Write updated balance to file                 |
 | `viewInfo()`        | Display logged User data                      |
 | `logout()`          | Logout from application                       |
 
