@@ -87,18 +87,20 @@ typedef struct {
 
 ## 🧠 Functional Modules
 
-| Function          | Purpose                                       |
-| ----------------- | --------------------------------------------- |
-| `mainMenu()`      | Entry point for register/login/exit           |
-| `registerUser()`  | Add a new user and initialize account balance |
-| `loginUser()`     | Verify credentials and load user data         |
-| `bankMenu()`      | Operations after login                        |
-| `checkBalance()`  | Display current balance                       |
-| `deposit()`       | Add amount and update file                    |
-| `withdraw()`      | Subtract amount if sufficient balance         |
-| `updateBalance()` | Write updated balance to file                 |
-| `viewInfo()`      | Display logged User data                      |
-| `logout()`        | Logout from application                       |
+| Function            | Purpose                                       |
+| ------------------- | --------------------------------------------- |
+| `mainMenu()`        | Entry point for register/login/exit           |
+| `registerUser()`    | Add a new user and initialize account balance |
+| `encryptPassword()` | Simple password encryption                    |
+| `decryptPassword()` | Simple password decryption                    |
+| `loginUser()`       | Verify credentials and load user data         |
+| `bankMenu()`        | Operations after login                        |
+| `checkBalance()`    | Display current balance                       |
+| `deposit()`         | Add amount and update file                    |
+| `withdraw()`        | Subtract amount if sufficient balance         |
+| `updateBalance()`   | Write updated balance to file                 |
+| `viewInfo()`        | Display logged User data                      |
+| `logout()`          | Logout from application                       |
 
 ---
 

@@ -2,6 +2,9 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 
 // User structure
 typedef struct {
@@ -17,21 +20,21 @@ char *encryptPassword(char *password);
 // Password decryption
 char *decryptPassword(char *encryptedPassword);
 // Add a new user and initialize account balance
-void registerUser(char *username, char *password);
+User *registerUser(char *username, char *password);
 // Verify credentials and load user data
-void loginUser(char *username, char *password);
+User loginUser(char *username, char *password);
 // Operations after login
-void bankMenu();
+void bankMenu(User user);
 // Display current balance
-void checkBalance(char *username);
+void checkBalance(User user);
 // Add amount and update file
-void deposit(char *username, float amount);
+void deposit(User user, float amount);
 // Subtract amount if sufficient balance
-void withdraw(char *username, float amount);
+void withdraw(User user, float amount);
 // Write updated balance to file
-void updateBalance(char *username, float amount);
+void updateBalance(User user, float amount);
 // Display logged User data
-void viewInfo(char *username);
+void viewInfo(User user);
 // Logout from application
 void logout();
 
